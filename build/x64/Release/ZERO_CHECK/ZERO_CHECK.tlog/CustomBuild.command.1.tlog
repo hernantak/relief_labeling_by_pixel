@@ -1,0 +1,10 @@
+^C:\USERS\PF2L6EZZ\DOCUMENTS\HERNANTA\MYCODE\PROJECT\S2\SOURCE CODE\BUILD\CMAKEFILES\1F3B159321407194D114D4F2EFC0F79B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/PF2L6EZZ/Documents/Hernanta/MyCode/Project/S2/Source code" "-BC:/Users/PF2L6EZZ/Documents/Hernanta/MyCode/Project/S2/Source code/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/PF2L6EZZ/Documents/Hernanta/MyCode/Project/S2/Source code/build/Project_Name.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
