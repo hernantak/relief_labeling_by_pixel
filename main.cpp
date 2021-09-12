@@ -309,11 +309,11 @@ int main(void) {
 	loadConfig();
 
 	Mat image = imread(file_name + extension);
-	resize(image, image, cv::Size(320,240));
+	// resize(image, image, cv::Size(320,240));
 	int num_cols = image.cols;
 	int num_rows = image.rows;	
 
-	Mat out_label = cv::Mat::zeros(240, 320, CV_8UC1);
+	Mat out_label = cv::Mat::zeros(image.size().height, image.size().width, CV_8UC1);
 
 	while (true)
 	{
